@@ -13,5 +13,5 @@
         </div>
     </div>
     
-    <img class="w-full" src="{{ asset('storage/JIM.JPG')}}">
+    <img class="w-full" src="{{ asset('storage/JIM.jpg')}}">
 </div>

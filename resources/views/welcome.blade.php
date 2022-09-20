@@ -145,7 +145,7 @@
             
             <div class="lg:flex w-full mt-5">
                 <div class="lg:hidden flex w-full rounded-lg">
-                    <img class=" border-spacing-1 object-fill rounded-lg" src="{{ asset('storage/about_us.png')}}">
+                    <img class=" border-spacing-1 object-fill rounded-lg" src="{{ asset('storage/about_us.PNG')}}">
                 </div>
                 <div class="w-full items-start lg:mt-0 mt-10">
                     <p class="my-5 text-3xl font-medium tracking-tight text-indigo-500 uppercase">About Us</p>
@@ -163,7 +163,7 @@
                     </div>
                 </div>
                 <div class="hidden lg:flex w-full rounded-lg">
-                    <img class=" border-spacing-1 object-fill rounded-lg" src="{{ asset('storage/about_us.png')}}">
+                    <img class=" border-spacing-1 object-fill rounded-lg" src="{{ asset('storage/about_us.PNG')}}">
                 </div>
             </div>
             
@@ -209,7 +209,7 @@
                                 <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
                             </div>
                             <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                            img src="{{ asset('storage/luq.PNG')}}"
+                            img src="{{ asset('storage/luq.png')}}"
                                 alt="">
                         </blockquote>
                         <blockquote
@@ -226,7 +226,7 @@
                                 <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
                             </div>
                             <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                            img src="{{ asset('storage/ijat.PNG')}}"
+                            img src="{{ asset('storage/ijat.png')}}"
                                 alt="">
                         </blockquote>
                     </div>
@@ -251,7 +251,7 @@
                                 <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
                             </div>
                             <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                            img src="{{ asset('storage/eiman.PNG')}}"
+                            img src="{{ asset('storage/eiman.png')}}"
                                 alt="">
                         </blockquote>
                         <blockquote
@@ -273,7 +273,7 @@
                                 <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
                             </div>
                             <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                            img src="{{ asset('storage/hakim.PNG')}}"
+                            img src="{{ asset('storage/hakim.png')}}"
                                 alt="">
                         </blockquote>
                     </div>
