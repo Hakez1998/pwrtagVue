@@ -6,16 +6,17 @@ use Illuminate\View\Component;
 
 class InfoBanner extends Component
 {
-    public $title, $subtitle, $whiteTemplate, $iconType;
+    public $title, $subtitle1, $subtitle2, $whiteTemplate, $iconType;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($title, $subtitle, $whiteTemplate, $iconType)
-    {
+    public function __construct($title, $subtitle1, $subtitle2, $whiteTemplate, $iconType)
+    {   
         $this->title = $title;
-        $this->subtitle = $subtitle;
+        $this->subtitle1 = $subtitle1;
+        $this->subtitle2 = $subtitle2;
         $this->whiteTemplate = $whiteTemplate;
         $this->iconType = $iconType;
     }

@@ -1,68 +1,68 @@
-<div x-data="countdown" class="flex items-center justify-center w-full h-36 mt-10">
+<div x-data="countdown" class="flex items-center justify-center w-full h-36">
     <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
     <div x-show='open' class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-        <span class="countdown font-mono text-5xl">
+        <span class="countdown font-mono text-5xl md:text-7xl">
         <span id="daySpan" style="--value:00;"></span>
         </span>
         days
     </div> 
     <div x-show='open' class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-        <span class="countdown font-mono text-5xl">
+        <span class="countdown font-mono text-5xl md:text-7xl">
         <span id="hourSpan" style="--value:00;"></span>
         </span>
         hours
     </div> 
     <div x-show='open' class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-        <span class="countdown font-mono text-5xl">
+        <span class="countdown font-mono text-5xl md:text-7xl">
         <span id="minSpan" style="--value:00;"></span>
         </span>
         min
     </div> 
     <div x-show='open' class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-        <span class="countdown font-mono text-5xl">
+        <span class="countdown font-mono text-5xl md:text-7xl">
         <span id="secSpan" style="--value:00;"></span>
         </span>
         sec
     </div>
     <div x-show="!open" class="flex items-center justify-center">
         <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content mx-2">
-            <span class="countdown font-mono text-5xl">
+            <span class="countdown font-mono text-5xl md:text-7xl">
             <span style="--value:00;"></span>
             </span>
                 E
         </div>
         <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content mx-2">
-            <span class="countdown font-mono text-5xl">
+            <span class="countdown font-mono text-5xl md:text-7xl">
             <span style="--value:00;"></span>
             </span>
                 X
         </div>
         <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content mx-2">
-            <span class="countdown font-mono text-5xl">
+            <span class="countdown font-mono text-5xl md:text-7xl">
             <span style="--value:00;"></span>
             </span>
                 P
         </div>
         <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content mx-2">
-            <span class="countdown font-mono text-5xl">
+            <span class="countdown font-mono text-5xl md:text-7xl">
             <span style="--value:00;"></span>
             </span>
                 I
         </div>
         <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content mx-2">
-            <span class="countdown font-mono text-5xl">
+            <span class="countdown font-mono text-5xl md:text-7xl">
             <span style="--value:00;"></span>
             </span>
                 R
         </div>
         <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content mx-2">
-            <span class="countdown font-mono text-5xl">
+            <span class="countdown font-mono text-5xl md:text-7xl">
             <span style="--value:00;"></span>
             </span>
                 E
         </div>
         <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content mx-2">
-            <span class="countdown font-mono text-5xl">
+            <span class="countdown font-mono text-5xl md:text-7xl">
             <span style="--value:00;"></span>
             </span>
                 D

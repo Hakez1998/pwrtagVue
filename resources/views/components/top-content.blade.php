@@ -6,18 +6,18 @@
                 class="z-30 flex flex-col items-center w-full max-w-xl pt-48 text-center lg:items-start lg:w-1/2 lg:pt-20 xl:pt-40 lg:text-left">
                 <h1 {{ $attributes->merge(['class' => 'relative mb-4 text-3xl font-black leading-tight sm:text-6xl xl:mb-8 text-'.$titleColor])}} >{{ $mainTitle }}</h1>
                 <p class="pr-0 mb-8 text-base text-slate-400 sm:text-lg xl:text-xl lg:pr-20">{{ $subTitle }}</p>
-                <a href="#_" 
+                <a href="#_" @click="modalToggle" 
                      {{ $attributes->merge(['class' => 'relative self-start inline-block w-auto px-8 py-4 mx-auto mt-0 text-base font-bold text-white  border-t border-gray-200 rounded-md shadow-xl sm:mt-1 fold-bold lg:mx-0 bg-'.$buttonColor]) }}>{{ $buttonText }}</a>
                 <div class="flex-col hidden mt-12 sm:flex lg:mt-24">
                     <!-- <p class="mb-4 text-sm font-medium tracking-widest text-gray-500 uppercase">Integrates With</p> -->
                     <div class="flex">
                     </div>
                 </div>
-                <svg class="absolute left-0 max-w-md mt-24 -ml-64 left-svg" viewBox="0 0 423 423"
+                <svg class="absolute left-0 max-w-md -mt-20 -ml-64 left-svg" viewBox="0 0 423 423"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs>
                         <linearGradient x1="100%" y1="0%" x2="4.48%" y2="0%" id="linearGradient-1">
-                            <stop stop-color="#5C54DB" offset="0%" />
+                            <stop stop-color="#b13cf2" offset="0%" />
                             <stop stop-color="#6A82E7" offset="100%" />
                         </linearGradient>
                         <filter x="-9.3%" y="-6.7%" width="118.7%" height="118.7%" filterUnits="objectBoundingBox"

@@ -5,6 +5,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+
   <script>
     tailwind.config = {
       theme: {
@@ -52,14 +55,17 @@
         }
         </style>
     </head>
-    <body x-data="body" class="overflow-x-hidden antialiased">
+    <body x-data="body" class="overflow-x-hidden antialiased bg-[#0A0513]">
     <!-- Header Section -->
     <header class="relative z-50 w-full h-24">
         <div
-            class="container flex items-center justify-center h-full max-w-6xl px-8 mx-auto sm:justify-between xl:px-0">
+            class="container flex items-center justify-center h-full max-w-6xl px-8 mx-auto sm:justify-between xl:px-0 ">
             
-            <x-top-logo/>
+            <div class="w-full flex items-center justify-between">
+                <x-top-logo/>
             <x-top-menu/>
+            </div>
+            
             
             <div
                 class="absolute left-0 flex-col items-center justify-center hidden w-full pb-8 mt-48 border-b border-gray-200 md:relative md:w-auto md:bg-transparent md:border-none md:mt-0 md:flex-row md:p-0 md:items-end md:flex md:justify-between">
@@ -67,12 +73,12 @@
                     class="relative z-40 px-3 py-2 mr-0 text-sm font-bold text-pink-500 md:px-5 lg:text-white sm:mr-3 md:mt-0">Login</a> -->
                 <!-- <a href="#_" @click="modalToggle()"
                     class="relative z-40 inline-block w-auto h-full px-5 py-3 text-sm font-bold leading-none text-white transition-all transition duration-100 duration-300 bg-indigo-700 rounded shadow-md fold-bold lg:bg-white lg:text-indigo-700 sm:w-full lg:shadow-none hover:shadow-xl">Register</a> -->
-                <svg class="absolute top-0 left-0 hidden w-screen max-w-3xl -mt-64 -ml-12 lg:block"
+                <!-- <svg class="absolute top-0 left-0 hidden w-screen max-w-3xl -mt-64 -ml-12 lg:block"
                     viewBox="0 0 818 815" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs>
-                        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="c">
-                            <stop stop-color="#E614F2" offset="0%" />
-                            <stop stop-color="#FC3832" offset="100%" />
+                        <linearGradient x1="100%" y1="100%" x2="100%" y2="100%" id="c">
+                            <stop stop-color="#612381" offset="100%" />
+                            <stop stop-color="#612381" offset="100%" />
                         </linearGradient>
                         <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="f">
                             <stop stop-color="#657DE9" offset="0%" />
@@ -107,7 +113,7 @@
                             <use fill="url(#f)" xlink:href="#e" />
                         </g>
                     </g>
-                </svg>
+                </svg> -->
             </div>
 
             <x-mobile-menu/>
@@ -135,19 +141,42 @@
     <!-- About Us Section -->
     <div class="relative px-8 py-10 md:py-16 lg:py-24 xl:py-40 xl:px-0">
         <div id="about-us" class="container flex flex-col items-center h-full max-w-6xl mx-auto">
-        <p class="my-5 text-3xl font-medium tracking-tight text-indigo-500 uppercase">About Us
-                    </p>
-            <h3
-                class="w-full max-w-2xl px-5 px-8 mt-2 text-2xl font-black leading-tight text-center text-slate-50 sm:mt-0 sm:px-0 sm:text-6xl md:px-0">
-                We are PIONEERS
-            </h3>
+            
+            
+            <div class="lg:flex w-full mt-5">
+                <div class="lg:hidden flex w-full rounded-lg">
+                    <img class=" border-spacing-1 object-fill rounded-lg" src="{{ asset('storage/about_us.png')}}">
+                </div>
+                <div class="w-full items-start lg:mt-0 mt-10">
+                    <p class="my-5 text-3xl font-medium tracking-tight text-indigo-500 uppercase">About Us</p>
+                    <h3
+                        class="w-full max-w-2xl mt-2 text-2xl font-black leading-tight  text-slate-50 sm:mt-0 sm:px-0 sm:text-6xl md:px-0">
+                        We are PIONEERS
+                    </h3>
+                    <div class="my-5 mx-auto">
+                        <div>
+                        <p class="font-semibold text-lg my-1">Background</p>
+                       <p> How did PWRTAG began? </p>
+
+                       <p class=" text-justify pr-10"> It started with a dream. A dream to unite the weightlifting community with positivity, empowerment and competition. Our mission is to build a community that supports everyone’s goal to become the best version of themselves, in strength, mental, and physique. With this goal in mind, our team are dedicated to create something big for the lifters of our generation. Follow us on our journey to revolutionise the weightlifting world and create a new era of <b>JIM!</b></p>
+                    </div>
+                    </div>
+                </div>
+                <div class="hidden lg:flex w-full rounded-lg">
+                    <img class=" border-spacing-1 object-fill rounded-lg" src="{{ asset('storage/about_us.png')}}">
+                </div>
+            </div>
+            
+            
+            
+            
         </div>
     </div>
     <!-- End About Us Section -->
 
     <!-- BEGIN EVENTS SECTION -->
     <x-banner 
-        title="EVENT COUNTDOWN"
+        title="PWRTAG GAMES"
         titleColor="gray-100"/>
     <!-- END EVENTS SECTION -->
 
@@ -255,6 +284,8 @@
         </div>
     </div>
     <!-- End Gallery-->
+
+    <x-carousel />
 
 
     <x-footer-content 
