@@ -1,4 +1,4 @@
-<div id="features" class="relative w-full px-8 py-10 md:py-16 lg:py-24 xl:py-40 xl:px-0">
+<div id="events" class="relative w-full px-8 py-10 md:py-16 lg:py-24 xl:py-40 xl:px-0">
         <div class="container flex flex-col items-center justify-between h-full max-w-6xl mx-auto">
             <!-- <h2 class="my-5 text-base font-medium tracking-tight text-indigo-500 uppercase">Our Features</h2> -->
             <h3 {{ $attributes->merge(['class' => 'max-w-2xl px-5 mt-2 text-3xl font-black leading-tight text-center sm:mt-0 sm:px-0 sm:text-6xl text-'.$titleColor]) }}>

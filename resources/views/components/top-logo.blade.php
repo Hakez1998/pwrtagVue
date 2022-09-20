@@ -10,5 +10,5 @@
         </svg>
         <span class="ml-3 text-xl text-gray-100">PWRTAG<span class="text-pink-500">.</span></span>
     </a> -->
-    <img class="w-48 h-36" src="{{ asset('storage/neon20logo201.webp')}}">
+    <img class="w-48 h-36" src="{{ asset('storage/Pwrtag_Neon.PNG')}}">
 </div>

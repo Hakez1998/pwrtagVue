@@ -65,8 +65,8 @@
                 class="absolute left-0 flex-col items-center justify-center hidden w-full pb-8 mt-48 border-b border-gray-200 md:relative md:w-auto md:bg-transparent md:border-none md:mt-0 md:flex-row md:p-0 md:items-end md:flex md:justify-between">
                 <!-- <a href="#_"
                     class="relative z-40 px-3 py-2 mr-0 text-sm font-bold text-pink-500 md:px-5 lg:text-white sm:mr-3 md:mt-0">Login</a> -->
-                <a href="#_" @click="modalToggle()"
-                    class="relative z-40 inline-block w-auto h-full px-5 py-3 text-sm font-bold leading-none text-white transition-all transition duration-100 duration-300 bg-indigo-700 rounded shadow-md fold-bold lg:bg-white lg:text-indigo-700 sm:w-full lg:shadow-none hover:shadow-xl">Register</a>
+                <!-- <a href="#_" @click="modalToggle()"
+                    class="relative z-40 inline-block w-auto h-full px-5 py-3 text-sm font-bold leading-none text-white transition-all transition duration-100 duration-300 bg-indigo-700 rounded shadow-md fold-bold lg:bg-white lg:text-indigo-700 sm:w-full lg:shadow-none hover:shadow-xl">Register</a> -->
                 <svg class="absolute top-0 left-0 hidden w-screen max-w-3xl -mt-64 -ml-12 lg:block"
                     viewBox="0 0 818 815" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs>
@@ -121,7 +121,7 @@
         mainTitle="Unleash Your Power!"
         titleColor="gray-100"
         subTitle="Let's make it BIGGER"
-        buttonText="Sign Up Today"
+        buttonText="Register Now"
         buttonColor="indigo-600"/>
     
         <div x-show='modelOpen' class="fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -132,213 +132,37 @@
         
     <!-- HERO SECTION END -->
 
-    <!-- BEGIN FEATURES SECTION -->
+    <!-- About Us Section -->
+    <div class="relative px-8 py-10 md:py-16 lg:py-24 xl:py-40 xl:px-0">
+        <div id="about-us" class="container flex flex-col items-center h-full max-w-6xl mx-auto">
+        <p class="my-5 text-3xl font-medium tracking-tight text-indigo-500 uppercase">About Us
+                    </p>
+            <h3
+                class="w-full max-w-2xl px-5 px-8 mt-2 text-2xl font-black leading-tight text-center text-slate-50 sm:mt-0 sm:px-0 sm:text-6xl md:px-0">
+                We are PIONEERS
+            </h3>
+        </div>
+    </div>
+    <!-- End About Us Section -->
+
+    <!-- BEGIN EVENTS SECTION -->
     <x-banner 
         title="EVENT COUNTDOWN"
         titleColor="gray-100"/>
-    <!-- END FEATURES SECTION -->
+    <!-- END EVENTS SECTION -->
 
-    <!-- Pricing Section -->
-    <!-- <div class="relative px-8 py-10 bg-white border-t border-gray-200 md:py-16 lg:py-24 xl:py-40 xl:px-0">
-        <div id="pricing" class="container flex flex-col items-center h-full max-w-6xl mx-auto">
-            <h2 class="my-5 text-base font-medium tracking-tight text-indigo-500 uppercase">Our Pricing</h2>
-            <h3
-                class="w-full max-w-2xl px-5 px-8 mt-2 text-2xl font-black leading-tight text-center text-gray-900 sm:mt-0 sm:px-0 sm:text-6xl md:px-0">
-                Simple, Transparent Pricing for Everyone</h3>
-            <div class="max-w-full mx-auto md:max-w-6xl sm:px-8">
-                <div class="relative flex flex-col items-center block sm:flex-row">
-                    <div
-                        class="relative z-0 w-11/12 max-w-sm my-8 border border-gray-200 rounded-lg sm:w-3/5 lg:w-1/3 sm:my-5 md:-mr-4">
-                        <div class="overflow-hidden text-black bg-white border-t border-gray-100 rounded-lg shadow-sm">
-                            <div
-                                class="block max-w-sm px-8 mx-auto mt-5 text-sm text-left text-black sm:text-md lg:px-6">
-                                <h3 class="p-3 text-lg font-bold tracking-wide text-center uppercase">Basic<span
-                                        class="ml-2 font-light">Plan</span></h3>
-                                <h4
-                                    class="flex items-center justify-center pb-6 text-4xl font-bold text-center text-gray-900">
-                                    <span class="mr-1 -ml-2 text-lg text-gray-700">$</span>48</h4>
-                                <p class="text-sm text-gray-600">In our basic plan you can take advantage of all these
-                                    features below.
-                                </p>
-                            </div>
-                            <div class="flex flex-wrap px-6 mt-8">
-                                <ul>
-                                    <li class="flex items-center">
-                                        <div class="p-2 text-green-500 rounded-full fill-current ">
-                                            <svg class="w-6 h-6 align-middle" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round">
-                                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                            </svg>
-                                        </div>
-                                        <span class="ml-3 text-lg text-gray-700">Awesome Feature</span>
-                                    </li>
-                                    <li class="flex items-center">
-                                        <div class="p-2 text-green-500 rounded-full fill-current ">
-                                            <svg class="w-6 h-6 align-middle" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round">
-                                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                            </svg>
-                                        </div>
-                                        <span class="ml-3 text-lg text-gray-700">And Another Cool Feature</span>
-                                    </li>
-                                    <li class="flex items-center">
-                                        <div class="p-2 text-green-500 rounded-full fill-current ">
-                                            <svg class="w-6 h-6 align-middle" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round">
-                                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                            </svg>
-                                        </div>
-                                        <span class="ml-3 text-lg text-gray-700">One More Feature</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="flex items-center block p-8 uppercase">
-                                <a href="#_"
-                                    class="block w-full px-6 py-4 mt-3 text-lg font-semibold text-center text-white bg-gray-900 rounded shadow-sm hover:bg-green-600">Select
-                                    This Plan</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="relative z-10 w-full max-w-md my-8 bg-white rounded-lg shadow-lg sm:w-2/3 lg:w-1/3 sm:my-5">
-                        <div
-                            class="py-4 text-sm font-semibold leading-none tracking-wide text-center text-white uppercase bg-indigo-500 rounded-t">
-                            Most Popular</div>
-                        <div class="block max-w-sm px-8 mx-auto mt-5 text-sm text-left text-black sm:text-md lg:px-6">
-                            <h3 class="p-3 pb-1 text-lg font-bold tracking-wide text-center uppercase">Pro<span
-                                    class="ml-2 font-light">Plan</span></h3>
-                            <h4
-                                class="flex items-center justify-center pb-6 text-5xl font-bold text-center text-gray-900">
-                                <span class="mr-1 -ml-2 text-lg text-gray-700">$</span>98</h4>
-                            <p class="text-sm text-gray-600">Our most popular package is the Pro Plan which gives you
-                                access to the
-                                following:</p>
-                        </div>
-                        <div class="flex justify-start pl-12 mt-8 sm:justify-start">
-                            <ul>
-                                <li class="flex items-center">
-                                    <div class="p-2 text-green-500 rounded-full fill-current">
-                                        <svg class="w-6 h-6 align-middle" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                        </svg>
-                                    </div>
-                                    <span class="ml-3 text-lg text-gray-700">Really Cool Features</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <div class="p-2 text-green-500 rounded-full fill-current ">
-                                        <svg class="w-6 h-6 align-middle" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                        </svg>
-                                    </div>
-                                    <span class="ml-3 text-lg text-gray-700">Another Cool Feature</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <div class="p-2 text-green-500 rounded-full fill-current ">
-                                        <svg class="w-6 h-6 align-middle" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                        </svg>
-                                    </div>
-                                    <span class="ml-3 text-lg text-gray-700">And One More</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="flex items-center block p-8 uppercase">
-                            <a href="#_"
-                                class="block w-full px-6 py-4 mt-3 text-lg font-semibold text-center text-white bg-gray-900 rounded shadow-sm hover:bg-indigo-600">Select
-                                This Plan</a>
-                        </div>
-                    </div>
-                    <div
-                        class="relative z-0 w-11/12 max-w-sm my-8 rounded-lg shadow-lg sm:w-3/5 lg:w-1/3 sm:my-5 md:-ml-4">
-                        <div class="overflow-hidden text-black bg-white rounded-lg shadow-lg shadow-inner">
-                            <div
-                                class="block max-w-sm px-8 mx-auto mt-5 text-sm text-left text-black sm:text-md lg:px-8">
-                                <h3 class="p-3 pb-1 text-lg font-bold tracking-wide text-center uppercase">Premium<span
-                                        class="ml-2 font-light">Plan</span></h3>
-                                <h4
-                                    class="flex items-center justify-center pb-6 text-4xl font-bold text-center text-gray-900">
-                                    <span class="mr-1 -ml-2 text-lg text-gray-700">$</span>78</h4>
-                                <p class="pl-2 text-sm text-gray-600">With our premium plan you can take advantage of
-                                    all the following
-                                    features:</p>
-                            </div>
-                            <div class="flex flex-wrap px-8 mt-8">
-                                <ul>
-                                    <li class="flex items-center">
-                                        <div class="p-2 text-green-500 rounded-full fill-current ">
-                                            <svg class="w-6 h-6 align-middle" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round">
-                                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                            </svg>
-                                        </div>
-                                        <span class="ml-3 text-lg text-gray-700">Totally Tubular Feature</span>
-                                    </li>
-                                    <li class="flex items-center">
-                                        <div class="p-2 text-green-500 rounded-full fill-current ">
-                                            <svg class="w-6 h-6 align-middle" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round">
-                                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                            </svg>
-                                        </div>
-                                        <span class="ml-3 text-lg text-gray-700">Super Cool Feature</span>
-                                    </li>
-                                    <li class="flex items-center">
-                                        <div class="p-2 text-green-500 rounded-full fill-current ">
-                                            <svg class="w-6 h-6 align-middle" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round">
-                                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                            </svg>
-                                        </div>
-                                        <span class="ml-3 text-lg text-gray-700">And One More</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="flex items-center block p-8 uppercase">
-                                <a href="#_"
-                                    class="block w-full px-6 py-4 mt-3 text-lg font-semibold text-center text-white bg-gray-900 rounded shadow-sm hover:bg-green-600">Select
-                                    This Plan</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- End Pricing Section -->
-
-    <!-- Start Testimonials -->
-    <div id="testimonials"
+    <!-- Start Gallery -->
+    <div id="gallery"
         class="flex items-center justify-center w-full px-8 py-10 md:py-16 lg:py-24 xl:py-40 xl:px-0">
         <div class="max-w-6xl mx-auto">
             <div class="flex-col items-center ">
                 <div class="flex flex-col items-center justify-center w-full h-full max-w-2xl pr-8 mx-auto text-center">
-                    <p class="my-5 text-base font-medium tracking-tight text-indigo-500 uppercase">Create Your Signature Tag With Us!
+                    <p class="my-5 text-3xl font-medium tracking-tight text-indigo-500 uppercase">gallery
                     </p>
                     <h2
                         class="text-4xl font-extrabold leading-10 tracking-tight text-gray-100 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
                         HALL OF FAME</h2>
-                    <p class="my-6 text-xl font-medium text-gray-500">Prove that you are worthy to be in HANMA CLAN!</p>
+                    <p class="my-6 text-xl font-medium text-slate-400">Create your signature tag with us!</p>
 
                 </div>
                 <div class="flex flex-col items-center justify-center max-w-2xl py-8 mx-auto xl:flex-row xl:max-w-full">
@@ -347,45 +171,33 @@
                             class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease">
                             <div class="flex flex-col pr-8">
                                 <div class="relative pl-12">
-                                    <svg class="absolute left-0 w-10 h-10 text-indigo-500 fill-current"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                        <path
-                                            d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg>
-                                    <p class="mt-2 text-base text-gray-600">I'm loving these templates! Very nice
-                                        features and layouts.
-                                    </p>
+                                    <p class="mt-2 text-base text-gray-600">The Baddest Weight Lifter!
                                 </div>
-
-                                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">Sandra
-                                    Walton <span class="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO
-                                        SomeCompany</span></h3>
+                                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">Mr. Luqman
+                                     <span class="mt-1 text-sm leading-5 text-gray-500 truncate">- Sang Pecinta
+                                     </span>
+                                </h3>
                                 <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
                             </div>
                             <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                                src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2694&q=80"
+                            img src="{{ asset('storage/luq.PNG')}}"
                                 alt="">
                         </blockquote>
                         <blockquote
                             class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 mt-16 mb-16 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease xl:mb-0">
                             <div class="flex flex-col pr-10">
                                 <div class="relative pl-12">
-                                    <svg class="absolute left-0 w-10 h-10 text-indigo-500 fill-current"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                        <path
-                                            d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg>
-                                    <p class="mt-2 text-base text-gray-600">Really digging this service. Now I can
-                                        quickly bootstrap any
-                                        project.</p>
+                                    <p class="mt-2 text-base text-gray-600">The Baddest Sit Ups!
+                                    </p>
                                 </div>
-                                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">Kenny
-                                    Jones <span class="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO
-                                        SomeCompany</span></h3>
+                                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">Mr. Izzat Danial 
+                                    <span class="mt-1 text-sm leading-5 text-gray-500 truncate">- Mat Jambu
+                                    </span>
+                                </h3>
                                 <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
                             </div>
                             <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                                src="https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80"
+                            img src="{{ asset('storage/ijat.PNG')}}"
                                 alt="">
                         </blockquote>
                     </div>
@@ -394,46 +206,45 @@
                             class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease">
                             <div class="flex flex-col pr-10">
                                 <div class="relative pl-12">
-                                    <svg class="absolute left-0 w-10 h-10 text-indigo-500 fill-current"
+                                    <!-- <svg class="absolute left-0 w-10 h-10 text-indigo-500 fill-current"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
                                         <path
                                             d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg>
-                                    <p class="mt-2 text-base text-gray-600">Extremely helpful in every single project we
-                                        have released.
+                                    </svg> -->
+                                    <p class="mt-2 text-base text-gray-600">The Baddest Jumping Jacks!
                                     </p>
                                 </div>
 
-                                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">Mike Smith
-                                    <span class="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO SomeCompany</span>
+                                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">Mr. Bo Eiman
+                                    <span class="mt-1 text-sm leading-5 text-gray-500 truncate">- Lover not Hater
+                                    </span>
                                 </h3>
                                 <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
                             </div>
                             <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1700&q=80"
+                            img src="{{ asset('storage/eiman.PNG')}}"
                                 alt="">
                         </blockquote>
                         <blockquote
                             class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 mt-16 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease">
                             <div class="flex flex-col pr-10">
                                 <div class="relative pl-12">
-                                    <svg class="absolute left-0 w-10 h-10 text-indigo-500 fill-current"
+                                    <!-- <svg class="absolute left-0 w-10 h-10 text-indigo-500 fill-current"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
                                         <path
                                             d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg>
-                                    <p class="mt-2 text-base text-gray-600">Finally a quick and easy system I can use
-                                        for any type of
-                                        project.</p>
+                                    </svg> -->
+                                    <p class="mt-2 text-base text-gray-600">The Baddest Buffet Eater!
+                                    </p>
                                 </div>
-
-                                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">Molly
-                                    Sanchez <span class="mt-1 text-sm leading-5 text-gray-500 truncate">- CEO
-                                        SomeCompany</span></h3>
+                                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">Mr. Hakim 
+                                    <span class="mt-1 text-sm leading-5 text-gray-500 truncate">- Big Guy With Big Heart
+                                    </span>
+                                </h3>
                                 <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
                             </div>
                             <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80"
+                            img src="{{ asset('storage/hakim.PNG')}}"
                                 alt="">
                         </blockquote>
                     </div>
@@ -443,12 +254,12 @@
             </div>
         </div>
     </div>
-    <!-- End Testimonials-->
+    <!-- End Gallery-->
 
 
     <x-footer-content 
-        leftInfo="Crafting the next-level of user experience and engagement."
-        trademark="© 2021 Pwrtag. All rights reserved."/>
+        leftInfo="Giving Gym Goers a Next Level of Gym Experience"
+        trademark="© 2022 Pwrtag. All rights reserved."/>
 
     <!-- a little JS for the mobile nav button -->
     <script>
