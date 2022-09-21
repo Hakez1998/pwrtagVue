@@ -77,16 +77,21 @@
 
             <div class="mt-4">
                 <label for="gender" class="block text-sm text-gray-700 capitalize dark:text-gray-600 mb-2">Gender</label>
-                <button 
+                <!-- <button 
                     @click="updateGender('male')"
                     class="px-3 py-2 text-sm tracking-wide text-indigo-600 capitalize transition-colors duration-200 transform bg-white rounded-md border-2 border-indigo-600 hover:font-bold"
                     :class="{ 'bg-indigo-600 text-white': gender=='male' }"
-                >Male</button>
-                <button 
+                >Male</button> -->
+                <!-- <button 
                     @click="updateGender('female')"
                     class="px-3 py-2 text-sm tracking-wide text-indigo-600 capitalize transition-colors duration-200 transform bg-white rounded-md border-2 border-indigo-600 hover:font-bold"
                     :class="{ 'bg-indigo-600 text-white': gender=='female' }"
-                >Female</button>
+                >Female</button> -->
+                <select x-model="gender" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/3 p-2.5  ">
+                    <option selected>Choose your gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>                    
+                </select>
             </div>
             
             <div class="mt-4">
@@ -158,8 +163,6 @@
                 else if(this.gender == gender){
                     this.gender = null;
                 }
-
-                console.log(this.gender)
             }
         }))
     })

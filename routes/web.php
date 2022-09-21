@@ -18,4 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/windmill', function () {
+    return view('windmill');
+});
+
+Route::get('/admin', [PwrtagController::class, 'getUsersData']);
+
 Route::post('/register', [PwrtagController::class, 'register']);

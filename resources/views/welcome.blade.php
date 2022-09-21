@@ -19,6 +19,29 @@
       }
     }
   </script>
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('body', () => ({
+                modelOpen: false,
+    
+                modalToggle() {
+                    this.modelOpen = ! this.modelOpen
+                }
+            }))
+        })
+        if (document.getElementById('nav-mobile-btn')) {
+            document.getElementById('nav-mobile-btn').addEventListener('click', function () {
+                if (this.classList.contains('close')) {
+                    document.getElementById('nav').classList.add('hidden');
+                    this.classList.remove('close');
+                } else {
+                    document.getElementById('nav').classList.remove('hidden');
+                    this.classList.add('close');
+                }
+            });
+        }
+    </script>
   
 <link href="https://cdn.jsdelivr.net/npm/daisyui@2.28.0/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
@@ -279,13 +302,13 @@
                     </div>
                 </div>
 
-
+                <x-carousel />
             </div>
         </div>
     </div>
     <!-- End Gallery-->
 
-    <x-carousel />
+    
 
 
     <x-footer-content 
@@ -293,28 +316,7 @@
         trademark="© 2022 Pwrtag. All rights reserved."/>
 
     <!-- a little JS for the mobile nav button -->
-    <script>
-        document.addEventListener('alpine:init', () => {
-        Alpine.data('body', () => ({
-            modelOpen: false,
- 
-            modalToggle() {
-                this.modelOpen = ! this.modelOpen
-            }
-        }))
-    })
-        if (document.getElementById('nav-mobile-btn')) {
-            document.getElementById('nav-mobile-btn').addEventListener('click', function () {
-                if (this.classList.contains('close')) {
-                    document.getElementById('nav').classList.add('hidden');
-                    this.classList.remove('close');
-                } else {
-                    document.getElementById('nav').classList.remove('hidden');
-                    this.classList.add('close');
-                }
-            });
-        }
-    </script>
+
 
 </body>
 </html>
