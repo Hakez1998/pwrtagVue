@@ -516,6 +516,7 @@ class ComposerStaticInit4a1c4b400207b267a835a2d04053f8b0
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\View\\Components\\Banner' => __DIR__ . '/../..' . '/app/View/Components/Banner.php',
+        'App\\View\\Components\\Carousel' => __DIR__ . '/../..' . '/app/View/Components/Carousel.php',
         'App\\View\\Components\\Countdown' => __DIR__ . '/../..' . '/app/View/Components/Countdown.php',
         'App\\View\\Components\\FooterContent' => __DIR__ . '/../..' . '/app/View/Components/FooterContent.php',
         'App\\View\\Components\\InfoBanner' => __DIR__ . '/../..' . '/app/View/Components/InfoBanner.php',

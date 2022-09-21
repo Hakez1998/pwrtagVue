@@ -27,6 +27,7 @@ return array(
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
     'App\\View\\Components\\Banner' => $baseDir . '/app/View/Components/Banner.php',
+    'App\\View\\Components\\Carousel' => $baseDir . '/app/View/Components/Carousel.php',
     'App\\View\\Components\\Countdown' => $baseDir . '/app/View/Components/Countdown.php',
     'App\\View\\Components\\FooterContent' => $baseDir . '/app/View/Components/FooterContent.php',
     'App\\View\\Components\\InfoBanner' => $baseDir . '/app/View/Components/InfoBanner.php',

@@ -1,4 +1,4 @@
-<div class=" w-5/6">   
+<div class="w-5/6">   
     <div id="default-carousel" class="relative" data-carousel="static">
         <!-- Carousel wrapper -->
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
