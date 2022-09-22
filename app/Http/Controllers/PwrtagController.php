@@ -9,27 +9,33 @@ use Illuminate\Http\Response;
 use App\Models\Event;
 use Illuminate\Support\Facades\Auth;
 
+
 class PwrtagController extends Controller
 {
     public function register(Request $request)
     {   
-        try {
-// at most 40 participants
-            Event::create([
-                'name' => $request->name,
-                'ic_number' => $request->ic,
-                'gym_name' => $request->gymName,
-                'email' => $request->email,
-                'gender' => $request->gender,
-                'weight' => $request->weight,
-                'age' => $request->age,
-                'tiket_number' => rand(0000, 9999),
-            ]);
-            return response()->json(Response::HTTP_ACCEPTED);
+        if(Event::count() < 40) {
+            try {
+                Event::create([
+                    'name' => $request->name,
+                    'ic_number' => $request->ic,
+                    'gym_name' => $request->gymName,
+                    'email' => $request->email,
+                    'gender' => $request->gender,
+                    'weight' => $request->weight,
+                    'age' => $request->age,
+                    'tiket_number' => rand(0000, 9999),
+                ]);
+                return response()->json(Response::HTTP_ACCEPTED);
+            }
+            catch (Exception $e) {
+                return response()->json(Response::HTTP_BAD_REQUEST);
+            }
         }
-        catch (Exception $e) {
-            return response()->json(Response::HTTP_BAD_REQUEST);
+        else {
+            return response()->json(Response::HTTP_NOT_ACCEPTABLE); //406
         }
+            
         
     }
 
@@ -72,5 +78,10 @@ class PwrtagController extends Controller
             // return response()->json(Response::HTTP_UNAUTHORIZED); //401
             return back()->with('success','Login attempt failed');
         }
+    }
+
+    public function generatePDF()
+    {
+
     }
 }

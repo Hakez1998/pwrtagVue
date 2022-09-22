@@ -3,7 +3,7 @@
 <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 3313.4 1818.1" style="enable-background:new 0 0 3313.4 1818.1;" xml:space="preserve">
-<style type="text/css">
+<style type="text/css" class="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt">
 	.st0{fill:#FFFFFF;}
 </style>
 <g>

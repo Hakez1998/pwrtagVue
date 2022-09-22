@@ -33,8 +33,14 @@
                     <span class="font-medium">Error!</span> Please try again later.
                 </div>
             </div>
+            <div x-show="status=='exceed'" class="flex text-lg text-red-700">
+                <svg class="w-6 h-6 inline mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                <div>
+                    <span class="font-medium">Sorry!</span> You have exceed limit of participants.
+                </div>
+            </div>
 
-            <button @click="modelOpen = false" class="text-gray-600 focus:outline-none hover:text-gray-700">
+            <button @click="modelOpen = false; status = null" class="text-gray-600 focus:outline-none hover:text-gray-700">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -144,6 +150,9 @@
 
                 if(this.newpost == 202) {
                     this.status = 'success';
+                }
+                else if(this.newpost == 406) {
+                    this.status = 'exceed';
                 }
                 else {
                     this.status = 'fail';

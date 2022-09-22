@@ -37,8 +37,11 @@
         class="z-20 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block flex-shrink-0"
       >
         <div class="py-4 text-gray-500 dark:text-gray-400">
-          <a href="/" class="flex items-center justify-start pl-5 w-full">
+          <a href="/" class="flex items-center justify-start pl-5 w-full" :class="{'hidden': !dark}">
             <x-logo02 />
+          </a>
+          <a href="/" class="flex items-center justify-start pl-5 w-full" :class="{'hidden': dark}">
+            <x-logo01 />
           </a>
           <ul class="mt-6">
             <li class="relative px-6 py-3">
@@ -951,7 +954,7 @@
                     </thead>
                     <tbody>
                         @foreach($datas as $data)
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-500  cursor-pointer">
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-200   cursor-pointer" :class="{'hover:bg-gray-600 border-gray-700': dark}">
                             <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                 {{ $data->name}}
                             </th>
@@ -976,6 +979,13 @@
                         </tr>
                         @endforeach
                     </tbody>
+                    @if($data->count() == 0)
+                    <tbody>
+                      <tr class="text-gray-50">
+                          <td colspan="7" class="text-center py-1"><i>  No participant registered yet </i></td>
+                        </tr>
+                    </tbody>
+                    @endif  
                 </table>
             </div>
 

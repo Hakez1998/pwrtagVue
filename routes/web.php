@@ -33,3 +33,9 @@ Route::get('/admin', [PwrtagController::class, 'getUsersData'])->middleware('aut
 Route::post('/register', [PwrtagController::class, 'register']);
 
 Route::post('/signin', [PwrtagController::class, 'login']);
+
+Route::get('/print', [PwrtagController::class, 'generatePDF']);
+
+Route::get('/pdf', function () {
+    return view('pdf');
+})->name('pdf');
