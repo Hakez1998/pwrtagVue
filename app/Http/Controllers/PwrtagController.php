@@ -35,6 +35,13 @@ class PwrtagController extends Controller
 
     public function getUsersData() 
     {
+        try {
+            $ages = round(Event::sum('age') / Event::count(),0);
+        }
+        catch (Exception $e) {
+            $ages = 0;
+        }
+
         return view('admin')
         ->with(
             [
@@ -42,7 +49,7 @@ class PwrtagController extends Controller
                 'total' => 
                     [
                         'participant' => Event::count(),
-                        'age' => round(Event::sum('age') / Event::count(),0),
+                        'age' => $ages,
                         'heavyweight' => Event::where('weight', '>=', '60')->count(),
                         'lightweight' => Event::where('weight', '<', '60')->count(),
                     ]
