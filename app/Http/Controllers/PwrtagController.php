@@ -35,10 +35,10 @@ class PwrtagController extends Controller
 
     public function getUsersData() 
     {
-        try {
+        if(Event::count() > 0) {
             $ages = round(Event::sum('age') / Event::count(),0);
         }
-        catch (Exception $e) {
+        else {
             $ages = 0;
         }
 
