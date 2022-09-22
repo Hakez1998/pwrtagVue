@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PwrtagController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,10 +19,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/windmill', function () {
-    return view('windmill');
-});
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
 
-Route::get('/admin', [PwrtagController::class, 'getUsersData']);
+Route::get('/logout', function () {
+    Auth::logout();
+    return view('login');
+})->name('logout');
+
+Route::get('/admin', [PwrtagController::class, 'getUsersData'])->middleware('auth')->name('admin');
 
 Route::post('/register', [PwrtagController::class, 'register']);
+
+Route::post('/signin', [PwrtagController::class, 'login']);

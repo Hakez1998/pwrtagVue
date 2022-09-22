@@ -1,8 +1,8 @@
-<div class="w-full">
+<div class="w-full lg:max-w-6xl mx-auto">
    
         <!-- Import or change icon here -->
         @if($iconType == 1)
-        <div class="relative flex flex-col items-center justify-center w-full h-full lg:px-20 mr-5 rounded-3xl  ">
+        <div class="relative flex flex-col items-center justify-center w-full h-full mr-5 rounded-3xl  ">
         
             <x-svg4/>
         @elseif($iconType == 2 || $iconType == 3)
