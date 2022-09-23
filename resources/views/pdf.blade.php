@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1 {font-family: "Nunito", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('/storage/JIM.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-</style>
+  <style>
+    @media only screen {
+      body {
+        font-family: 'Nunito', sans-serif;
+        height: 100%;
+        width: 100%;
+        display: block;
+        margin: 0px;
+      }
+      h1 {
+        font-family: "font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
+      }
+    }
+  </style>
 </head>
 <body>
+  <div style="height: 400px; width: 100%; display: flex; justify-content: center;">
+    <div style=" width: 50%; align-items: center; align-content: center;">
+      <img style="width: 100%" src="{{ asset('storage/Pwrtag_Neon.PNG')}}">
+    </div>
+  </div>
+  <div style="height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; padding-left: 20px; padding-right: 20px;">
+    <div style="margin-right:50px;">
+      <h1> Name: {{ $data->name }}</h1>
+    </div>
+    <div>
+      <h1>Ticket Number: {{ $data->tiket_number}}</h1>
+    </div>
+  </div>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    <div style="height:10px; "><x-logo01 /></div>
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">35 days left</p>
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-  </div>
-</div>
+
 
 </body>
 </html>

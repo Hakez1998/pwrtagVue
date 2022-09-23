@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Models\Event;
 use Illuminate\Support\Facades\Auth;
+use Barryvdh\DomPDF\Facade\Pdf;
+use Vinkla\Hashids\Facades\Hashids;
 
 
 class PwrtagController extends Controller
@@ -24,7 +26,7 @@ class PwrtagController extends Controller
                     'gender' => $request->gender,
                     'weight' => $request->weight,
                     'age' => $request->age,
-                    'tiket_number' => rand(0000, 9999),
+                    'tiket_number' => rand(1000, 9999),
                 ]);
                 return response()->json(Response::HTTP_ACCEPTED);
             }
@@ -80,8 +82,15 @@ class PwrtagController extends Controller
         }
     }
 
-    public function generatePDF()
+    public function checkTicket(Request $request)
     {
+        try {
+            $data = Event::where('email',$request->email)->first();            
+            return response()->json(url('/ticket') . '/'.Hashids::encode($data->id)); //400
+        }
+        catch (Exception $e) {
+            return response()->json(Response::HTTP_BAD_REQUEST); //400
+        }
 
     }
 }

@@ -5,7 +5,11 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
+<<<<<<< HEAD
         'reference' => 'f57801dde48f35937b2c4dc7255fe3bc3da5cec9',
+=======
+        'reference' => '3ec6cd468b8caa9571b38f2a63b50632ff855c7b',
+>>>>>>> f8928cfb901441ec4b0668a10d62b4efb0b7dfa7
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -139,6 +143,15 @@
             'reference' => '58571acbaa5f9f462c9c77e911700ac66f446d4e',
             'dev_requirement' => false,
         ),
+        'graham-campbell/manager' => array(
+            'pretty_version' => 'v4.7.0',
+            'version' => '4.7.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../graham-campbell/manager',
+            'aliases' => array(),
+            'reference' => 'b4cafa6491b9c92ecf7ce17521580050a27b8308',
+            'dev_requirement' => false,
+        ),
         'graham-campbell/result-type' => array(
             'pretty_version' => 'v1.1.0',
             'version' => '1.1.0.0',
@@ -183,6 +196,15 @@
             'aliases' => array(),
             'reference' => '8c3d0a3f6af734494ad8f6fbbee0ba92422859f3',
             'dev_requirement' => true,
+        ),
+        'hashids/hashids' => array(
+            'pretty_version' => '4.1.0',
+            'version' => '4.1.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../hashids/hashids',
+            'aliases' => array(),
+            'reference' => '8cab111f78e0bd9c76953b082919fc9e251761be',
+            'dev_requirement' => false,
         ),
         'illuminate/auth' => array(
             'dev_requirement' => false,
@@ -397,7 +419,11 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
+<<<<<<< HEAD
             'reference' => 'f57801dde48f35937b2c4dc7255fe3bc3da5cec9',
+=======
+            'reference' => '3ec6cd468b8caa9571b38f2a63b50632ff855c7b',
+>>>>>>> f8928cfb901441ec4b0668a10d62b4efb0b7dfa7
             'dev_requirement' => false,
         ),
         'laravel/pint' => array(
@@ -1275,6 +1301,15 @@
             'install_path' => __DIR__ . '/../tijsverkoyen/css-to-inline-styles',
             'aliases' => array(),
             'reference' => '4348a3a06651827a27d989ad1d13efec6bb49b19',
+            'dev_requirement' => false,
+        ),
+        'vinkla/hashids' => array(
+            'pretty_version' => '10.0.1',
+            'version' => '10.0.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../vinkla/hashids',
+            'aliases' => array(),
+            'reference' => '9dbcfc1b20ecc25e73bba6e8c724d1648fa15fdd',
             'dev_requirement' => false,
         ),
         'vlucas/phpdotenv' => array(

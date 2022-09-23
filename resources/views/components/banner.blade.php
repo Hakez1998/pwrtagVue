@@ -18,8 +18,8 @@
         </div>
 
         <x-countdown 
-            date="24" 
-            month="09" 
+            date="01" 
+            month="10" 
             year="2022"/>
 
         <div class="my-8">
