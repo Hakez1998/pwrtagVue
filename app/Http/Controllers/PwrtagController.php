@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Models\Event;
 use Illuminate\Support\Facades\Auth;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 
 class PwrtagController extends Controller
@@ -26,9 +27,11 @@ class PwrtagController extends Controller
                     'age' => $request->age,
                     'tiket_number' => rand(0000, 9999),
                 ]);
+                $this->generatePDF($request->email);
                 return response()->json(Response::HTTP_ACCEPTED);
             }
             catch (Exception $e) {
+                dd($e);
                 return response()->json(Response::HTTP_BAD_REQUEST);
             }
         }
@@ -80,8 +83,10 @@ class PwrtagController extends Controller
         }
     }
 
-    public function generatePDF()
+    public function generatePDF($email)
     {
-
+        $data = Event::where('email',$email)->first();
+        $html = 'pdf';
+        return Pdf::loadView($html, with(['data' => $data]))->download('pwrtag.pdf');
     }
 }
