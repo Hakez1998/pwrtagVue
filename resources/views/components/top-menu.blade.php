@@ -7,11 +7,9 @@
     <a href="#events"
         class="mr-0 font-bold duration-100 md:mr-3 lg:mr-8 transition-color hover:text-indigo-600">Events</a>
     <a href="#gallery"
-        class="font-bold duration-100 transition-color hover:text-indigo-600">Gallery</a>
-    <div class="flex flex-col block w-full font-medium border-t border-gray-200 md:hidden">
-        <a href="#_" @click="$dispatch('modal')"
-            class="relative inline-block w-full px-5 py-3 text-sm leading-none text-center text-white bg-indigo-700 fold-bold">Register</a>
-    </div>
+        class="font-bold duration-100 md:mr-3 lg:mr-8 transition-color hover:text-indigo-600">Gallery</a>
+    <span @click="ticket = true"
+    class="font-bold duration-100 transition-color hover:text-indigo-600 cursor-pointer">Check your ticket</span>
 </nav>
 <script>
     document.addEventListener('alpine:init', () => {

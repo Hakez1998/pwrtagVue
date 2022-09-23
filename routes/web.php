@@ -34,8 +34,8 @@ Route::post('/register', [PwrtagController::class, 'register']);
 
 Route::post('/signin', [PwrtagController::class, 'login']);
 
-Route::get('/print/{email}', [PwrtagController::class, 'generatePDF']);
+Route::post('/ticket', [PwrtagController::class, 'checkTicket']);
 
-Route::get('/pdf', function () {
-    return view('pdf')->with(['data' => $data = \App\Models\Event::find(1)]);
-})->name('pdf');
+Route::get('/ticket/{id}', function ($id) {
+    return view('tailwindpdf')->with(['data' => \App\Models\Event::find($id)]);
+})->name('ticket');

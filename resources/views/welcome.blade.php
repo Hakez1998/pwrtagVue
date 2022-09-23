@@ -24,7 +24,12 @@
         document.addEventListener('alpine:init', () => {
             Alpine.data('body', () => ({
                 modelOpen: false,
-    
+                ticket: false,
+
+                ticketToggle() {
+                    this.ticket = !this.ticket;
+                },
+
                 modalToggle() {
                     this.modelOpen = ! this.modelOpen
                 }
@@ -112,6 +117,10 @@
             <x-registration-modal 
                 formTitle="Registration form"
                 formSubtitle="Add your information and start work to get things done"/>
+        </div>
+
+        <div x-show="ticket" class="fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+            <x-check-ticket />
         </div>
         
     <!-- HERO SECTION END -->

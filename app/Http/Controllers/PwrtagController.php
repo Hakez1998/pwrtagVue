@@ -25,13 +25,11 @@ class PwrtagController extends Controller
                     'gender' => $request->gender,
                     'weight' => $request->weight,
                     'age' => $request->age,
-                    'tiket_number' => rand(0000, 9999),
+                    'tiket_number' => rand(1000, 9999),
                 ]);
-                $this->generatePDF($request->email);
                 return response()->json(Response::HTTP_ACCEPTED);
             }
             catch (Exception $e) {
-                dd($e);
                 return response()->json(Response::HTTP_BAD_REQUEST);
             }
         }
@@ -83,10 +81,15 @@ class PwrtagController extends Controller
         }
     }
 
-    public function generatePDF($email)
+    public function checkTicket(Request $request)
     {
-        $data = Event::where('email',$email)->first();
-        $html = 'pdf';
-        return Pdf::loadView($html, with(['data' => $data]))->download('pwrtag.pdf');
+        try {
+            $data = Event::where('email',$request->email)->first();            
+            return response()->json(url('/ticket') . '/'.$data->id); //400
+        }
+        catch (Exception $e) {
+            return response()->json(Response::HTTP_BAD_REQUEST); //400
+        }
+
     }
 }
