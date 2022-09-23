@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PwrtagController;
 use Illuminate\Support\Facades\Auth;
+use \Vinkla\Hashids\Facades\Hashids;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,5 +38,6 @@ Route::post('/signin', [PwrtagController::class, 'login']);
 Route::post('/ticket', [PwrtagController::class, 'checkTicket']);
 
 Route::get('/ticket/{id}', function ($id) {
-    return view('tailwindpdf')->with(['data' => \App\Models\Event::find($id)]);
+    $hashedId = Hashids::decode($id);
+    return view('tailwindpdf')->with(['data' => \App\Models\Event::find($hashedId[0])]);
 })->name('ticket');

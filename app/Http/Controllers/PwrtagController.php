@@ -9,6 +9,7 @@ use Illuminate\Http\Response;
 use App\Models\Event;
 use Illuminate\Support\Facades\Auth;
 use Barryvdh\DomPDF\Facade\Pdf;
+use Vinkla\Hashids\Facades\Hashids;
 
 
 class PwrtagController extends Controller
@@ -85,7 +86,7 @@ class PwrtagController extends Controller
     {
         try {
             $data = Event::where('email',$request->email)->first();            
-            return response()->json(url('/ticket') . '/'.$data->id); //400
+            return response()->json(url('/ticket') . '/'.Hashids::encode($data->id)); //400
         }
         catch (Exception $e) {
             return response()->json(Response::HTTP_BAD_REQUEST); //400
