@@ -18,12 +18,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
       defer
     ></script>
-    <script src="{{ asset('js/charts-lines.js') }}" defer></script>
-    <script src="{{ asset('/js/charts-pie.js') }}" defer></script>
+    <!-- <script src="{{ asset('js/charts-lines.js') }}" defer></script> -->
+    <!-- <script src="{{ asset('/js/charts-pie.js') }}" defer></script> -->
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
         <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
   </head>
@@ -980,7 +981,7 @@
                         </tr>
                         @endforeach
                     </tbody>
-                    @if($data->count() == 0)
+                    @if($datas->count() == 0)
                     <tbody>
                       <tr class="text-gray-50">
                           <td colspan="7" class="text-center py-1"><i>  No participant registered yet </i></td>
@@ -1032,7 +1033,7 @@
                 class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
               >
                 <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
-                  Traffic
+                  Pwrtag Traffic
                 </h4>
                 <canvas id="line"></canvas>
                 <div
@@ -1043,14 +1044,9 @@
                     <span
                       class="inline-block w-3 h-3 mr-1 bg-teal-600 rounded-full"
                     ></span>
-                    <span>Organic</span>
+                    <span>Visitors</span>
                   </div>
-                  <div class="flex items-center">
-                    <span
-                      class="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"
-                    ></span>
-                    <span>Paid</span>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -1059,4 +1055,102 @@
       </div>
     </div>
   </body>
+  <script>
+    const ctx = document.getElementById('line').getContext('2d');
+    const label = "{{ $traffic['lables'] }}";
+    const data1 = "{{ $traffic['data'] }}"
+    const lineConfig = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: label.split(','),
+        datasets: [
+          {
+            label: 'Visitor',
+            backgroundColor: '#0694a2',
+            borderColor: '#0694a2',
+            data: data1.split(','),
+            fill: false,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        /**
+         * Default legends are ugly and impossible to style.
+         * See examples in charts.html to add your own legends
+         *  */
+        legend: {
+          display: false,
+        },
+        tooltips: {
+          mode: 'index',
+          intersect: false,
+        },
+        hover: {
+          mode: 'nearest',
+          intersect: true,
+        },
+        scales: {
+          x: {
+            display: true,
+            scaleLabel: {
+              display: true,
+              labelString: 'Month',
+            },
+          },
+          y: {
+            display: true,
+            scaleLabel: {
+              display: true,
+              labelString: 'Value',
+            },
+          },
+        },
+      },
+    });
+  </script>
+  <script>
+        const ctx2 = document.getElementById('pie').getContext('2d');
+        const labelPie = "{{ $gender['lables'] }}";
+        const dataPie = "{{ $gender['data'] }}";
+        console.log(dataPie);
+    const pieConfig = new Chart( ctx2, {
+      type: 'doughnut',
+      data: {
+        datasets: [
+          {
+            data: dataPie.split(','),
+            /**
+             * These colors come from Tailwind CSS palette
+             * https://tailwindcss.com/docs/customizing-colors/#default-color-palette
+             */
+            backgroundColor: ['#0694a2', '#1c64f2', '#7e3af2'],
+            label: 'Dataset 1',
+          },
+        ],
+        labels: labelPie.split(','),
+      },
+      options: {
+        radius: 150,
+        responsive: true,
+        cutout: 200,
+        maintainAspectRatio: true,
+
+        // scales: {
+        //     yAxes: [{
+        //         ticks: {
+        //             beginAtZero:true
+        //         }
+        //     }]
+        // },
+        /**
+         * Default legends are ugly and impossible to style.
+         * See examples in charts.html to add your own legends
+         *  */
+        legend: {
+          display: false,
+        },
+      },
+    })
+  </script>
 </html>

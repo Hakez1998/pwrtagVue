@@ -17,6 +17,7 @@ use \Vinkla\Hashids\Facades\Hashids;
 */
 
 Route::get('/', function () {
+    \App\Helpers\ActivityLog::addToLog('Visit sites');
     return view('welcome');
 });
 
@@ -25,6 +26,7 @@ Route::get('/login', function () {
 })->name('login');
 
 Route::get('/logout', function () {
+    \App\Helpers\ActivityLog::addToLog('User ' . Auth::user()->name . ' logging out');
     Auth::logout();
     return view('login');
 })->name('logout');

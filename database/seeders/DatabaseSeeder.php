@@ -15,30 +15,30 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\Event::factory(40)->create();
+        \App\Models\Event::factory(10)->create();
 
-        \App\Models\User::create([
-            'name' => 'Luq',
-            'email' => 'luqman@pwrtag.com',
-            'password' => Hash::make('password')
-        ]);
+        // \App\Models\User::create([
+        //     'name' => 'Luq',
+        //     'email' => 'luqman@pwrtag.com',
+        //     'password' => Hash::make('password')
+        // ]);
 
-        \App\Models\User::create([
-            'name' => 'Izat',
-            'email' => 'izzatdanial@pwrtag.com',
-            'password' => Hash::make('password')
-        ]);
+        // \App\Models\User::create([
+        //     'name' => 'Izat',
+        //     'email' => 'izzatdanial@pwrtag.com',
+        //     'password' => Hash::make('password')
+        // ]);
 
-        \App\Models\User::create([
-            'name' => 'Izat',
-            'email' => 'eiman.asri@pwrtag.com',
-            'password' => Hash::make('password')
-        ]);
+        // \App\Models\User::create([
+        //     'name' => 'Izat',
+        //     'email' => 'eiman.asri@pwrtag.com',
+        //     'password' => Hash::make('password')
+        // ]);
 
-        \App\Models\User::create([
-            'name' => 'Izat',
-            'email' => 'hakimnorizman@pwrtag.com',
-            'password' => Hash::make('password')
-        ]);
+        // \App\Models\User::create([
+        //     'name' => 'Izat',
+        //     'email' => 'hakimnorizman@pwrtag.com',
+        //     'password' => Hash::make('password')
+        // ]);
     }
 }
