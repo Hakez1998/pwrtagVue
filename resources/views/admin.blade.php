@@ -14,15 +14,15 @@
       defer
     ></script>
     <script src="{{ asset('js/init-alpine.js') }}"></script>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
-    />
+    /> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
       defer
-    ></script>
+    ></script> -->
     <!-- <script src="{{ asset('js/charts-lines.js') }}" defer></script> -->
     <!-- <script src="{{ asset('/js/charts-pie.js') }}" defer></script> -->
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
@@ -742,12 +742,8 @@
                   aria-label="Account"
                   aria-haspopup="true"
                 >
-                  <img
-                    class="object-cover w-8 h-8 rounded-full"
-                    src="{{ asset('storage/Pwrtag_Neon.PNG')}}"
-                    alt=""
-                    aria-hidden="true"
-                  />
+                  <div class="w-8 h-8 flex items-center justify-center" :class="{'hidden' : !dark}"><x-svg1 /></div>
+                  <div class="w-8 h-8 flex items-center justify-center" :class="{'hidden' : dark}"><x-svg2 /></div>
                   
                 </button>
                 <template x-if="isProfileMenuOpen">
@@ -995,16 +991,17 @@
             <h2
               class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
             >
-              Charts
+              Analytics
             </h2>
             <div class="grid gap-6 mb-8 md:grid-cols-2">
               <div
                 class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
               >
                 <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
-                  Revenue
+                  Gender statistic
                 </h4>
-                <canvas id="pie"></canvas>
+                <canvas style="width:500px !important;
+  height:300px !important;" id="pie"></canvas>
                 <div
                   class="flex justify-center mt-4 space-x-3 text-sm text-gray-600 dark:text-gray-400"
                 >
@@ -1013,20 +1010,15 @@
                     <span
                       class="inline-block w-3 h-3 mr-1 bg-blue-500 rounded-full"
                     ></span>
-                    <span>Shirts</span>
+                    <span>Female</span>
                   </div>
                   <div class="flex items-center">
                     <span
                       class="inline-block w-3 h-3 mr-1 bg-teal-600 rounded-full"
                     ></span>
-                    <span>Shoes</span>
+                    <span>Male</span>
                   </div>
-                  <div class="flex items-center">
-                    <span
-                      class="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"
-                    ></span>
-                    <span>Bags</span>
-                  </div>
+                  
                 </div>
               </div>
               <div
@@ -1131,10 +1123,11 @@
         labels: labelPie.split(','),
       },
       options: {
-        radius: 150,
+        radius: 100,
         responsive: true,
-        cutout: 200,
+        cutout: 100,
         maintainAspectRatio: true,
+        aspectRatio: 2,
 
         // scales: {
         //     yAxes: [{

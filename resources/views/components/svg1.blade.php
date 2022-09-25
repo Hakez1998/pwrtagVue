@@ -1,43 +1,12 @@
-<svg class="relative w-20 h-20" viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs>
-        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1TriangleIcon1">
-            <stop stop-color="#9C09DB" offset="0%" />
-            <stop stop-color="#1C0FD7" offset="100%" />
-        </linearGradient>
-        <filter x="-14%" y="-10%" width="128%" height="128%" filterUnits="objectBoundingBox"
-            id="filter-3TriangleIcon1">
-            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1" />
-            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1"
-                result="shadowBlurOuter1" />
-            <feColorMatrix
-                values="0 0 0 0 0.141176471 0 0 0 0 0.031372549 0 0 0 0 0.501960784 0 0 0 0.15 0"
-                in="shadowBlurOuter1" />
-        </filter>
-        <path
-            d="M17.947 0h14.106c6.24 0 8.503.65 10.785 1.87a12.721 12.721 0 015.292 5.292C49.35 9.444 50 11.707 50 17.947v14.106c0 6.24-.65 8.503-1.87 10.785a12.721 12.721 0 01-5.292 5.292C40.556 49.35 38.293 50 32.053 50H17.947c-6.24 0-8.503-.65-10.785-1.87a12.721 12.721 0 01-5.292-5.292C.65 40.556 0 38.293 0 32.053V17.947c0-6.24.65-8.503 1.87-10.785A12.721 12.721 0 017.162 1.87C9.444.65 11.707 0 17.947 0z"
-            id="path-2TriangleIcon1" />
-    </defs>
-    <g id="Page-1TriangleIcon1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HDTriangleIcon1" transform="translate(-291 -1278)">
-            <g id="FeaturesTriangleIcon1" transform="translate(170 915)">
-                <g id="Group-9TriangleIcon1" transform="translate(0 365)">
-                    <g id="Group-8TriangleIcon1" transform="translate(125)">
-                        <g id="Rectangle-9TriangleIcon1">
-                            <use fill="#000" filter="url(#filter-3TriangleIcon1)"
-                                xlink:href="#path-2TriangleIcon1" />
-                            <use fill="url(#linearGradient-1TriangleIcon1)"
-                                xlink:href="#path-2TriangleIcon1" />
-                        </g>
-                        <g id="playTriangleIcon1" transform="translate(18 15)" fill="#FFF"
-                            fill-rule="nonzero">
-                            <path
-                                d="M9.432 2.023l8.919 14.879a1.05 1.05 0 01-.384 1.452 1.097 1.097 0 01-.548.146H-.42A1.07 1.07 0 01-1.5 17.44c0-.19.052-.375.15-.538L7.567 2.023a1.092 1.092 0 011.864 0z"
-                                id="TriangleIcon1" transform="rotate(90 8.5 10)" />
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="30" viewBox="0 0 1000 1000" xml:space="preserve">
+<desc>Created with Fabric.js 3.5.0</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="10%" height="10%" fill="rgba(255,255,255,0)"/>
+<g transform="matrix(0.0845 0 0 -0.0845 501.7553 497.7311)" id="331742">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-12400.5711, -17539.6279)" d="M 12000 23439 c -1018 -71 -1995 -400 -2835 -953 c -368 -243 -622 -451 -945 -775 c -233 -233 -367 -386 -546 -623 c -1014 -1345 -1400 -3062 -1064 -4728 c 172 -850 537 -1665 1055 -2355 c 332 -442 778 -887 1210 -1208 c 787 -585 1715 -968 2675 -1106 c 485 -70 1035 -79 1505 -25 c 1176 134 2231 586 3150 1350 c 167 139 580 551 719 719 c 820 986 1285 2139 1376 3410 c 13 184 13 606 -1 797 c -80 1143 -482 2227 -1160 3133 c -549 733 -1252 1325 -2059 1734 c -726 369 -1477 574 -2300 631 c -167 11 -611 11 -780 -1 z m 2205 -3873 c 331 -58 602 -275 770 -614 c 137 -275 202 -630 176 -957 c -7 -77 -14 -148 -17 -157 c -5 -17 -32 -18 -385 -18 l -379 0 l 0 373 c 0 410 -3 433 -63 557 c -45 94 -168 215 -267 264 c -140 68 -90 66 -1355 66 c -1264 0 -1216 2 -1354 -66 c -91 -45 -203 -149 -251 -233 l -35 -60 l -426 -1 l -426 0 l -5 148 c -6 168 4 314 28 387 c 52 158 155 269 287 310 c 65 21 3587 21 3702 1 z m 70 -899 c 4 -34 5 -76 3 -92 l -3 -30 l -200 -7 c -110 -4 -564 -14 -1010 -23 c -445 -9 -1125 -22 -1510 -30 c -385 -8 -986 -19 -1335 -25 c -349 -6 -669 -15 -710 -20 c -62 -8 -101 -22 -219 -81 c -209 -102 -361 -204 -554 -373 c -95 -84 -267 -277 -267 -301 c 0 -18 -32 -18 560 0 c 261 7 609 17 773 21 l 297 7 l 0 -91 c 0 -59 -4 -93 -12 -98 c -6 -4 -129 -11 -272 -15 c -1076 -32 -1438 -41 -1491 -37 c -69 6 -161 42 -176 70 c -19 35 69 227 158 345 c 102 135 318 320 519 445 c 163 101 319 171 554 251 c 175 60 -77 52 3595 122 c 440 8 843 17 895 18 c 52 2 163 4 247 5 l 151 2 l 7 -63 z m 2225 39 c 194 -35 390 -149 444 -257 c 95 -192 -86 -432 -494 -651 c -184 -99 -561 -244 -730 -280 c -103 -22 -137 -22 -3458 -43 l -1092 -7 l -15 34 c -7 19 -17 69 -21 111 l -7 77 l 489 1 c 269 1 1270 5 2224 8 l 1735 7 l 110 35 c 510 166 873 396 902 572 c 11 71 -44 134 -152 173 c -46 17 -99 19 -651 22 l -602 3 l -6 22 c -8 30 -8 172 1 180 c 3 4 286 7 627 7 c 478 -1 638 -4 696 -14 z m -5508 -653 c 4 -355 5 -359 31 -438 c 68 -207 223 -352 435 -406 c 72 -18 121 -19 1227 -19 c 1114 0 1154 1 1229 20 c 101 26 186 72 261 141 l 60 56 l 205 7 c 113 3 292 9 398 13 c 125 4 192 2 192 -4 c 0 -19 -105 -217 -150 -283 c -142 -209 -354 -361 -599 -428 l -96 -27 l -1602 -3 l -1603 -3 l 0 -939 l 0 -940 l -395 0 l -395 0 l 0 1795 l 0 1795 l 218 1 c 119 1 269 5 332 9 c 63 3 145 7 182 8 l 66 2 l 4 -357 z m 5117 182 c 67 -34 52 -110 -29 -151 c -74 -37 -203 -12 -216 42 c -9 35 21 80 68 103 c 51 25 135 28 177 6 z" stroke-linecap="round"/>
+</g>
+<g transform="matrix(0.0285 0 0 -0.0285 602.7163 482.5657)" id="991761">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-16008.082, -18151.8193)" d="M 16005 18185 c -5 -2 -22 -6 -36 -9 c -40 -9 -44 -33 -9 -51 c 27 -14 33 -14 75 6 c 25 12 45 27 45 34 c 0 17 -46 30 -75 20 z" stroke-linecap="round"/>
+</g>
 </svg>
