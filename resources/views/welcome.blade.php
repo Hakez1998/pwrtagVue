@@ -3,9 +3,12 @@
     <head>
     <meta charset="utf-8">
     <meta property="og:title" content="Pwrtag" />
-    <meta property="og:type" content="video.movie" />
-    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
-    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+    <meta property="og:description" 
+    content="Show us that your biceps is worthy." />
+    <meta property="og:description " content="Show us that your biceps is worthy" />
+    <!-- <meta property="og:type" content="video.movie" /> -->
+    <meta property="og:url" content="https://pwrtag.com/" />
+    <meta property="og:image" content="{{ url('storage/Pwrtag_Neon.PNG') }}" />
     <title>{{env("APP_NAME")}}</title>
     <meta name="csrf-token" content="{{ csrf_token() }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
