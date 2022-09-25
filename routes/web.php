@@ -17,8 +17,12 @@ use \Vinkla\Hashids\Facades\Hashids;
 */
 
 Route::get('/', function () {
-    \App\Helpers\ActivityLog::addToLog('Visit sites');
+    // \App\Helpers\ActivityLog::addToLog('Visit sites');
     return view('welcome');
+});
+Route::get('/index', function () {
+    // \App\Helpers\ActivityLog::addToLog('Visit sites');
+    return view('index');
 });
 
 Route::get('/login', function () {

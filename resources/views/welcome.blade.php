@@ -34,6 +34,25 @@
                 modelOpen: false,
                 ticket: false,
 
+                init() {
+                    if (document.getElementById('nav-mobile-btn')) {
+                        document.getElementById('nav-mobile-btn').addEventListener('click', function () {
+                            if (this.classList.contains('close')) {
+                                document.getElementById('nav').classList.add('hidden');
+                                this.classList.remove('close');
+                            } else {
+                                document.getElementById('nav').classList.remove('hidden');
+                                this.classList.add('close');
+                            }
+                        });
+                    }
+                },
+
+                select() {
+                    document.getElementById('nav').classList.add('hidden');
+                    document.getElementById('nav-mobile-btn').classList.remove('close');
+                },
+
                 ticketToggle() {
                     this.ticket = !this.ticket;
                 },
@@ -43,17 +62,6 @@
                 }
             }))
         })
-        if (document.getElementById('nav-mobile-btn')) {
-            document.getElementById('nav-mobile-btn').addEventListener('click', function () {
-                if (this.classList.contains('close')) {
-                    document.getElementById('nav').classList.add('hidden');
-                    this.classList.remove('close');
-                } else {
-                    document.getElementById('nav').classList.remove('hidden');
-                    this.classList.add('close');
-                }
-            });
-        }
     </script>
   
 <link href="https://cdn.jsdelivr.net/npm/daisyui@2.28.0/dist/full.css" rel="stylesheet" type="text/css" />
@@ -105,6 +113,7 @@
             
             <div
                 class="absolute left-0 flex-col items-center justify-center hidden w-full pb-8 mt-48 border-b border-gray-200 md:relative md:w-auto md:bg-transparent md:border-none md:mt-0 md:flex-row md:p-0 md:items-end md:flex md:justify-between">
+                
             </div>
 
             <x-mobile-menu/>
