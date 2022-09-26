@@ -183,107 +183,135 @@
         titleColor="gray-100"/>
     <!-- END EVENTS SECTION -->
 
-    <!-- Start Gallery -->
-    <div id="gallery"
-        class="flex items-center justify-center w-full px-8 py-10 md:py-16 lg:py-24 xl:py-40 xl:px-0">
-        <div class="max-w-6xl mx-auto">
+    <!-- Start Leaderboard -->
+    <div id="leaderboard"
+        class="flex flex-col items-center justify-center w-full px-8 py-10 md:py-16 lg:py-24 xl:py-40 xl:px-0">
+        <div class="max-w-6xl mx-auto mb-10">
             <div class="flex-col items-center ">
                 <div class="flex flex-col items-center justify-center w-full h-full max-w-2xl pr-8 mx-auto text-center">
-                    <p class="my-5 text-3xl font-medium tracking-tight text-indigo-500 uppercase">gallery
+                    <p class="my-5 text-3xl font-medium tracking-tight text-indigo-500 uppercase">Leaderboard
                     </p>
                     <h2
                         class="text-4xl font-extrabold leading-10 tracking-tight text-gray-100 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
                         HALL OF FAME</h2>
+                    <p class="my-6 text-xl font-medium text-slate-400">Carve your name here</p>
+
+                </div>
+            </div>
+            
+        </div>
+        <div class="w-3/4 mb-10">
+            <div class="mx-auto my-2 w-full rounded overflow-hidden shadow-md text-xs">
+            
+            <div class="flex bg-gray-200 px-2 py-2">
+                <div class="w-5/12 text-gray-700 text-left text-red-700">4:32 - 4th</div>
+                <div class="w-5/12 flex justify-end items-center">
+                <p class="w-8 px-2 text-center">1</p>
+                <p class="w-8 px-2 text-center">2</p>
+                <p class="w-8 px-2 text-center">3</p>
+                <p class="w-8 px-2 text-center">4</p>
+                </div>
+                <div class="w-1/6 text-gray-700 text-right">ABC</div>
+            </div>
+
+            <div class="flex px-2 py-2 items-center">
+                <div class="w-5/12 flex">
+                <img class="w-6 sm:w-10 mr-2 self-center" alt="away-logo" src="https://a1.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/tor.png&h=70&w=70">
+                <div class="flex flex-col">
+                    <p class="text-sm font-bold">Raptors</p>
+                    <p class="hidden sm:block text-gray-600">(58-24, 26-15 Away)</p>
+                </div>
+                </div>
+                <div class="w-5/12 flex justify-end items-center">
+                <p class="w-8 px-1 text-center">36</p>
+                <p class="w-8 px-1 text-center">24</p>
+                <p class="w-8 px-1 text-center">36</p>
+                <p class="w-8 px-1 text-center">27</p>
+                </div>
+                <p class="w-1/6 text-lg sm:text-xl font-bold text-right">123</p>
+            </div>
+
+            <div class="flex px-2 py-2 items-center">
+                <div class="w-5/12 flex">
+                <img class="w-6 sm:w-10 mr-2 self-center" alt="home-logo" src="https://a1.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/scoreboard/gs.png&h=70&w=70">
+                <div class="flex flex-col">
+                    <p class="text-sm font-bold">Warriors</p>
+                    <p class="hidden sm:block text-gray-600">(57-25, 30-11 Home)</p>
+                </div>
+                </div>
+                <div class="w-5/12 flex justify-end items-center">
+                <p class="w-8 px-1 text-center">29</p>
+                <p class="w-8 px-1 text-center">23</p>
+                <p class="w-8 px-1 text-center">31</p>
+                <p class="w-8 px-1 text-center">26</p>
+                </div>
+                <p class="w-1/6 text-lg sm:text-xl font-bold text-right">109</p>
+            </div>
+
+            <div class="hidden sm:block border-t border-gray-300">
+                <p class="text-center text-gray-500 m-1 uppercase">Top Performers</p>
+                <div class="flex">
+                <div class="w-1/2 px-2 py-2">
+                    <div class="flex">
+                    <img class="w-10 mr-2 self-center" src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6450.png?w=90&h=60&scale=crop&transparent=true">
+                    <div class="flex flex-col">
+                        <p class="font-semibold">Kawhi Leonard</p>
+                        <p class="text-gray-600">TOR - SF</p>
+                        <p class="text-gray-600">30 PTS, 7 REB, 6 AST</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="w-1/2 px-2 py-2">
+                    <div class="flex">
+                    <img class="w-10 mr-2 self-center" src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3975.png?w=90&h=60&scale=crop&transparent=true">
+                    <div class="flex flex-col">
+                        <p class="font-semibold">Stephen Curry</p>
+                        <p class="text-gray-600">GS - SG</p>
+                        <p class="text-gray-600">47 PTS, 8 REB, 7 AST</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="border-t bg-gray-200 text-center px-1 py-1">
+                <p class="text-gray-600">NBA Finals - Game 3, TOR leads 2-1</p>
+            </div>
+
+            <div class="flex border-t bg-gray-200">
+                <div class="w-1/2 px-2 py-2 text-center">
+                <p class="font-semibold text-gray-700">ORACLE Arena</p>
+                <p class="font-light text-gray-600">Oakland, CA</p>
+                </div>
+                <div class="w-1/2 px-2 py-2 text-center">
+                <p class="text-gray-600"><span class="font-semibold">Line</span>: GS -4.5</p>
+                <p class="text-gray-600"><span class="font-semibold">O/U</span>: 213.5</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Leaderboard -->
+
+    <!-- Start Gallery -->
+    <div id="gallery"
+        class="flex flex-col items-center justify-center w-full px-8 py-10 md:py-16 lg:py-24 xl:py-40 xl:px-0">
+        <div class="max-w-6xl mx-auto mb-10">
+            <div class="flex-col items-center ">
+                <div class="flex flex-col items-center justify-center w-full h-full max-w-2xl pr-8 mx-auto text-center">
+                    <h2
+                        class="my-6 text-4xl font-extrabold leading-10 tracking-tight text-gray-100 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
+                        Gallery</h2>
                     <p class="my-6 text-xl font-medium text-slate-400">Create your signature tag with us!</p>
 
                 </div>
-                <div class="flex flex-col items-center justify-center max-w-2xl py-8 mx-auto mb-5 xl:flex-row xl:max-w-full">
-                    <div class="w-full xl:w-1/2 xl:pr-8">
-                        <blockquote
-                            class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease">
-                            <div class="flex flex-col pr-8">
-                                <div class="relative pl-12">
-                                    <p class="mt-2 text-base text-gray-600">The Baddest Weight Lifter!
-                                </div>
-                                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">Mr. Luqman
-                                     <span class="mt-1 text-sm leading-5 text-gray-500 truncate">- Sang Pecinta
-                                     </span>
-                                </h3>
-                                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                            </div>
-                            <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                            img src="{{ asset('storage/luq.png')}}"
-                                alt="">
-                        </blockquote>
-                        <blockquote
-                            class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 mt-16 mb-16 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease xl:mb-0">
-                            <div class="flex flex-col pr-10">
-                                <div class="relative pl-12">
-                                    <p class="mt-2 text-base text-gray-600">The Baddest Sit Ups!
-                                    </p>
-                                </div>
-                                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">Mr. Izzat Danial 
-                                    <span class="mt-1 text-sm leading-5 text-gray-500 truncate">- Mat Jambu
-                                    </span>
-                                </h3>
-                                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                            </div>
-                            <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                            img src="{{ asset('storage/ijat.png')}}"
-                                alt="">
-                        </blockquote>
-                    </div>
-                    <div class="w-full xl:w-1/2 xl:pl-8">
-                        <blockquote
-                            class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease">
-                            <div class="flex flex-col pr-10">
-                                <div class="relative pl-12">
-                                    <!-- <svg class="absolute left-0 w-10 h-10 text-indigo-500 fill-current"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                        <path
-                                            d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg> -->
-                                    <p class="mt-2 text-base text-gray-600">The Baddest Jumping Jacks!
-                                    </p>
-                                </div>
-
-                                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">Mr. Bo Eiman
-                                    <span class="mt-1 text-sm leading-5 text-gray-500 truncate">- Lover not Hater
-                                    </span>
-                                </h3>
-                                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                            </div>
-                            <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                            img src="{{ asset('storage/eiman.png')}}"
-                                alt="">
-                        </blockquote>
-                        <blockquote
-                            class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 mt-16 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease">
-                            <div class="flex flex-col pr-10">
-                                <div class="relative pl-12">
-                                    <!-- <svg class="absolute left-0 w-10 h-10 text-indigo-500 fill-current"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-                                        <path
-                                            d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                                    </svg> -->
-                                    <p class="mt-2 text-base text-gray-600">The Baddest Buffet Eater!
-                                    </p>
-                                </div>
-                                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">Mr. Hakim 
-                                    <span class="mt-1 text-sm leading-5 text-gray-500 truncate">- Big Guy With Big Heart
-                                    </span>
-                                </h3>
-                                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                            </div>
-                            <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                            img src="{{ asset('storage/hakim.png')}}"
-                                alt="">
-                        </blockquote>
-                    </div>
-                </div>
-
-                <x-carousel />
             </div>
+            
+        </div>
+
+        <div class="w-3/4 0">
+            <x-carousel />
         </div>
     </div>
     <!-- End Gallery-->

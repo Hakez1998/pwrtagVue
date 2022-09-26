@@ -134,16 +134,25 @@
                 </div>
             </div>
           </div>
-          
-          <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2 md:border-l-2 border-white">
-            <div class="w-full">
+          <p class="text-white text-base text-center px-5 py-3">Thank you for your participation. Your ticket number is <br></p>
+          <div class="flex items-center justify-center px-6 pb-6 sm:p-12 md:w-1/2 md:border-l-2 border-white">
+            <div class="w-full items-center">
+                
                 <span class="text-white text-2xl">
+                    
                     #{{ $data->tiket_number}}
                 </span> 
             </div>
           </div>
-        </div>
+          <div class="w-full h-full">
+            <img src="{{ asset('storage/Tentative.png') }}">
+          </div>
+        </div>        
       </div>
+      
     </div>
+    <!-- <div class="w-full h-full">
+            <img src="{{ asset('storage/Tentative.png') }}">
+          </div> -->
   </body>
 </html>

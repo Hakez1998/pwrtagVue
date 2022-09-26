@@ -15,7 +15,7 @@ class Countdown extends Component
      */
     public function __construct($date, $month, $year)
     {
-        $this->date = Carbon::createFromDate($year, $month, $date)->format('M d, Y h:m:s');
+        $this->date = Carbon::create($year, $month, $date, 16, 00, 00)->format('M d, Y H:i:s');
     }
 
     /**
