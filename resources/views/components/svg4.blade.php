@@ -1,6 +1,6 @@
 <div class="relative w-full h-auto flex justify-center rounded-lg ">
-    <div class="absolute bottom-0 lg:h-48 h-28 w-full">
-        <div class="flex flex-col items-start justify-center bg-black opacity-70 w-full h-full px-2 lg:px-20 ">
+    <div class="absolute bottom-0 lg:h-48 h-28 lg:w-full w-auto">
+        <div class="flex flex-col items-start justify-center bg-black opacity-70 w-full h-full px-2 lg:px-20">
         
             <p class="text-white text-left opacity-100 text-xs lg:text-2xl font-bold">PWRTAG King of Bench Press</p>
             <p class="text-white text-left opacity-100 text-xs lg:text-2xl ">Location : Bunga Mawar Fitness, Pusat komersial, 2, Jalan Zuhal U5/179, Arena Bintang, 40150 Shah Alam, Selangor</p>
@@ -8,7 +8,7 @@
             <p class="text-white text-left opacity-100 text-xs lg:text-2xl ">Time: 4.00 pm - 6.00 pm</p>
             <p class="text-white text-left opacity-100 text-xs lg:text-2xl ">Weight Class: Any</p>
         </div>
-
+           <!-- Start Neon Button -->
             <div class="flex w-full items-start justify-center">
                 <div class="relative group w-full">
                 <div class="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
@@ -23,11 +23,7 @@
                 </button>
                 </div>
             </div>
-
-        <!-- <div class="fix right-0">
-            <button @click="modalToggle" class="opacity-100 relative self-start inline-block w-full px-8 lg:py-4 py-2 mx-auto mt-0 text-base font-bold text-white  border-t border-gray-200 rounded-b-md shadow-xl sm:mt-1 fold-bold lg:mx-0 bg-indigo-600 hover:bg-indigo-700"> Join Now</button>
-        </div> -->
+            <!-- End Neon Button -->
     </div>
-    
     <img class="w-full" src="{{ asset('storage/JIM.jpg')}}">
 </div>
