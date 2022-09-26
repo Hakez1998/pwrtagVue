@@ -1,11 +1,11 @@
 <div class="relative w-full h-auto flex justify-center rounded-lg ">
-    <div class="absolute bottom-0 lg:h-48 w-full">
-        <div class="flex flex-col items-start justify-center bg-black opacity-70 w-full h-full px-3 lg:px-20 ">
+    <div class="absolute bottom-0 lg:h-48 h-28 w-full">
+        <div class="flex flex-col items-start justify-center bg-black opacity-70 w-full h-full px-2 lg:px-20 ">
         
             <p class="text-white text-left opacity-100 text-xs lg:text-2xl font-bold">PWRTAG King of Bench Press</p>
             <p class="text-white text-left opacity-100 text-xs lg:text-2xl ">Location : Bunga Mawar Fitness, Pusat komersial, 2, Jalan Zuhal U5/179, Arena Bintang, 40150 Shah Alam, Selangor</p>
             <p class="text-white text-left opacity-100 text-xs lg:text-2xl ">Date: 10 Oct 2022</p>
-            <p class="text-white text-left opacity-100 text-xs lg:text-2xl ">Time: N/A</p>
+            <p class="text-white text-left opacity-100 text-xs lg:text-2xl ">Time: 4.00 pm - 6.00 pm</p>
             <p class="text-white text-left opacity-100 text-xs lg:text-2xl ">Weight Class: Any</p>
         </div>
 

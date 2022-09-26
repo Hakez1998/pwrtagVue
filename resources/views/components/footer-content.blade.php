@@ -7,7 +7,7 @@
                     <x-logo01 />
                 </span>
             </a>
-            <p class=" mx-5 w-72 text-base text-start text-gray-500">{{ $leftInfo }}</p>
+            <p class=" mx-5 w-72 text-sm text-start text-gray-500">{{ $leftInfo }}</p>
         </div>
         <div class="block w-auto pl-10 mt-6 text-sm  sm:flex lg:mt-0">
             <ul class="flex flex-col w-full p-0 font-medium text-center text-gray-700 list-none">
