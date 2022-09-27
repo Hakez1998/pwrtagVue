@@ -246,8 +246,8 @@
                 <!-- <p class="w-1/6 text-lg sm:text-xl font-bold text-right">109</p> -->
             </div>
 
-            <div class="hidden sm:block border-t border-gray-300">
-                <p class="text-center lg:text-base text-gray-400 m-1 uppercase">Top Performers</p>
+            <div class="sm:block border-t border-gray-300">
+                <p class="text-center text-xs lg:text-base text-gray-400 m-1 uppercase">Top Performers</p>
                 <div class="flex">
                 <div class="w-1/2 px-2 py-2">
                     <div class="flex">
