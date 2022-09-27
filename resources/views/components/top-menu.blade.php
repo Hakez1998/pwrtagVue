@@ -6,6 +6,8 @@
         class="mr-0 font-bold duration-100 md:mr-3 lg:mr-8 transition-color hover:text-indigo-600">About Us</a>
     <a href="#events" @click="select"
         class="mr-0 font-bold duration-100 md:mr-3 lg:mr-8 transition-color hover:text-indigo-600">Events</a>
+        <a href="#leaderboard" @click="select"
+        class="mr-0 font-bold duration-100 md:mr-3 lg:mr-8 transition-color hover:text-indigo-600">Hall Of Fame</a>
     <a href="#gallery" @click="select"
         class="font-bold duration-100 md:mr-3 lg:mr-8 transition-color hover:text-indigo-600">Gallery</a>
     <span @click="ticket = true" @click="select"

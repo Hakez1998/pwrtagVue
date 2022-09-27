@@ -143,19 +143,14 @@
     <!-- HERO SECTION END -->
 
     <!-- About Us Section -->
-    <div class="relative px-8 py-10 md:py-16 lg:py-24 xl:py-40 xl:px-0">
+    <div class="relative w-full px-8 py-10 md:py-16 lg:py-24 xl:py-40 xl:px-0">
         <div id="about-us" class="container flex flex-col items-center h-full max-w-6xl mx-auto">
-            
-            <div class="lg:flex w-full mt-5">
+        <p class="item-center text-center my-5 w-full max-w-2xl mt-2 text-2xl font-black leading-tight text-slate-50 sm:mt-0 sm:px-0 sm:text-6xl md:px-0 uppercase ">About Us</p>
+            <div class="lg:flex w-full mt-1 lg:mt-5">
                 <div class="lg:hidden flex w-full rounded-lg">
-                    <img class=" border-spacing-1 object-fill rounded-lg" src="{{ asset('storage/about_us.PNG')}}">
+                    <img class=" border-spacing-1 object-fill rounded-lg" src="{{ asset('storage/about_us01.PNG')}}">
                 </div>
                 <div class="w-full items-start lg:mt-0 mt-10">
-                    <p class="my-5 text-3xl font-medium tracking-tight text-indigo-500 uppercase">About Us</p>
-                    <h3
-                        class="w-full max-w-2xl mt-2 text-2xl font-black leading-tight  text-slate-50 sm:mt-0 sm:px-0 sm:text-6xl md:px-0">
-                        We are PIONEERS
-                    </h3>
                     <div class="my-5 mx-auto">
                         <div>
                         <p class="font-semibold text-lg my-1">Background</p>
@@ -165,8 +160,8 @@
                     </div>
                     </div>
                 </div>
-                <div class="hidden lg:flex w-full rounded-lg">
-                    <img class=" border-spacing-1 object-fill rounded-lg" src="{{ asset('storage/about_us.PNG')}}">
+                <div class="hidden lg:flex w-full rounded-lg lg:mt-1">
+                    <img class="border-spacing-1 object-fill rounded-lg" src="{{ asset('storage/about_us01.PNG')}}">
                 </div>
             </div>
             
@@ -188,8 +183,6 @@
         <div class="max-w-6xl mx-auto mb-10">
             <div class="flex-col items-center ">
                 <div class="flex flex-col items-center justify-center w-full h-full max-w-2xl pr-8 mx-auto text-center">
-                    <p class="my-5 text-3xl font-medium tracking-tight text-indigo-500 uppercase">Leaderboard
-                    </p>
                     <h2 
                         class="text-4xl font-extrabold leading-10 tracking-tight text-gray-100 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
                         HALL OF FAME
@@ -300,7 +293,7 @@
             <div class="flex-col items-center ">
                 <div class="flex flex-col items-center justify-center w-full h-full max-w-2xl pr-8 mx-auto text-center">
                     <h2
-                        class="my-6 text-4xl font-extrabold leading-10 tracking-tight text-gray-100 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
+                        class="my-6 text-4xl font-extrabold leading-10 tracking-tight text-gray-100 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl uppercase">
                         Gallery</h2>
                     <p class="my-6 text-xl font-medium text-slate-400">Create your signature tag with us!</p>
 
