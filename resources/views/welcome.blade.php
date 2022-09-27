@@ -273,7 +273,7 @@
             </div>
 
             <div class="border-t bg-gray-200 text-center px-1 py-1">
-                <p class="lg:text-base text-gray-600">King Of Deadlift</p>
+                <p class="lg:text-base text-gray-600 uppercase">King Of Deadlift</p>
             </div>
 
             <div class="flex border-t bg-gray-200">
