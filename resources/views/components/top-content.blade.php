@@ -40,10 +40,12 @@
                     </g>
                 </svg>
             </div>
-            <div class="relative z-30 flex flex-col items-end justify-center w-full h-full lg:w-1/2 ms:pl-10">
-                <div class="container relative left-0 w-full max-w-4xl lg:absolute xl:max-w-3xl lg:w-screen">
-                    <img src="{{ asset('storage/angkat_berat01.jpg')}}"
-                        class="w-full h-auto mt-20 mb-20 ml-0 lg:mt-24 xl:mt-40 lg:mb-0 lg:h-full lg:-ml-12">
+            <div class="lg:flex w-full mt-1 lg:mt-5">
+                <div class="lg:hidden flex w-full rounded-lg">
+                <iframe width="700" height="300" src="https://www.youtube.com/embed/UMCeWRc9gdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="hidden lg:flex w-full justify-center rounded-lg lg:mt-1">
+                <iframe width="700" height="500" src="https://www.youtube.com/embed/UMCeWRc9gdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>

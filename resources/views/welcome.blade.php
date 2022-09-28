@@ -164,10 +164,6 @@
                     <img class="border-spacing-1 object-fill rounded-lg" src="{{ asset('storage/about_us01.PNG')}}">
                 </div>
             </div>
-            
-            
-            
-            
         </div>
     </div>
     <!-- End About Us Section -->
