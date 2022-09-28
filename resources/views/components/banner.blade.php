@@ -1,20 +1,20 @@
 <div id="events" class="relative w-full px-8 py-10 md:py-16 lg:py-24 xl:py-40 xl:px-0">
         <div class="container flex flex-col items-center justify-between h-full max-w-6xl mx-auto">
             <!-- <h2 class="my-5 text-base font-medium tracking-tight text-indigo-500 uppercase">Our Features</h2> -->
-            <h3 {{ $attributes->merge(['class' => 'max-w-xl px-5 mt-2 text-3xl font-black leading-tight text-center sm:mt-0 sm:px-0 sm:text-6xl text-'.$titleColor]) }}>
+            <h3 {{ $attributes->merge(['class' => 'max-w-xl px-5 mt-2 text-2xl font-black leading-tight text-center sm:mt-0 sm:px-0 sm:text-6xl text-'.$titleColor]) }}>
                 {{ $title }}</h3>
                 
-            <div class="mt-20">
+            <div class="mt-10">
                 <p class="font-semibold text-lg my-1">Hype, Energy, Support.</p>
-                <p class=" text-justify lg:pr-10">These are what you need to break through your limits and UNLEASH YOUR POWER! Are you ready for something EPIC?!
+                <p class="text-justify sm:text-sm lg:text-lg lg:pr-10">These are what you need to break through your limits and UNLEASH YOUR POWER! Are you ready for something EPIC?!
                     Come join our PWRTAG Games where we challenge your strength, mental and endurance. Reminder! We are not powerlifting, This is a battle between you and yourself with the community behind your back to give you the push of support. 
                     Do you have what it takes to smash that PR and carve it on our PWRTAG leaderboard?
                     Register now and lets smash some records!</p>
             </div>
         </div>
 
-        <div class="mt-20 w-full text-center">
-            <p class="text-xl"> Next Event coming in</p> 
+        <div class="mt-16 w-full text-center">
+            <p class="text-xl lg:text-2xl"> Next Event Coming In</p> 
         </div>
 
         <x-countdown 

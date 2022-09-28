@@ -4,7 +4,7 @@
         
             <p class="text-white text-left opacity-100 text-xs lg:text-2xl font-bold">PWRTAG King of Bench Press</p>
             <p class="text-white text-left opacity-100 text-xs lg:text-2xl ">Location : Bunga Mawar Fitness</p>
-            <p class="text-white text-left opacity-100 text-xs lg:text-2xl ">Date: 10 Oct 2022</p>
+            <p class="text-white text-left opacity-100 text-xs lg:text-2xl ">Date: 1 Oct 2022</p>
             <p class="text-white text-left opacity-100 text-xs lg:text-2xl ">Time: 4.00 pm - 6.00 pm</p>
             <p class="text-white text-left opacity-100 text-xs lg:text-2xl ">Weight Class: Open</p>
         </div>

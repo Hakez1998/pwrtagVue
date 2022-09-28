@@ -151,13 +151,20 @@
                     <img class=" border-spacing-1 object-fill rounded-lg" src="{{ asset('storage/about_us01.PNG')}}">
                 </div>
                 <div class="w-full items-start lg:mt-0 mt-10">
-                    <div class="my-5 mx-auto">
+                <div class="mt-10">
+                <p class="font-semibold text-lg my-1">Background</p>
+                <p class="sm:text-sm lg:text-lg my-1">How did PWRTAG began?</p>
+                <p class=" text-justify sm:text-sm lg:text-lg lg:pr-10">It started with a dream. A dream to unite the weightlifting community with positivity, empowerment and competition. Our mission is 
+                    to build a community that supports everyone’s goal to become the best version of themselves, in strength, mental, and physique. With this goal in mind, our team 
+                    are dedicated to create something big for the lifters of our generation. Follow us on our journey to revolutionise the weightlifting world and create a new era of <b>JIM!</b></p>
+            </div>
+                    <!-- <div class="my-5 mx-auto">
                         <div>
-                        <p class="font-semibold text-lg my-1">Background</p>
+                        <p class="font-semibold sm:text-sm lg:text-lg my-1">Background</p>
                        <p> How did PWRTAG began? </p>
 
-                       <p class=" text-justify pr-10"> It started with a dream. A dream to unite the weightlifting community with positivity, empowerment and competition. Our mission is to build a community that supports everyone’s goal to become the best version of themselves, in strength, mental, and physique. With this goal in mind, our team are dedicated to create something big for the lifters of our generation. Follow us on our journey to revolutionise the weightlifting world and create a new era of <b>JIM!</b></p>
-                    </div>
+                       <p class="item-center text-justify pr-10"> It started with a dream. A dream to unite the weightlifting community with positivity, empowerment and competition. Our mission is to build a community that supports everyone’s goal to become the best version of themselves, in strength, mental, and physique. With this goal in mind, our team are dedicated to create something big for the lifters of our generation. Follow us on our journey to revolutionise the weightlifting world and create a new era of <b>JIM!</b></p>
+                    </div> -->
                     </div>
                 </div>
                 <div class="hidden lg:flex w-full rounded-lg lg:mt-1">
@@ -180,10 +187,10 @@
             <div class="flex-col items-center ">
                 <div class="flex flex-col items-center justify-center w-full h-full max-w-2xl pr-8 mx-auto text-center">
                     <h2 
-                        class="text-4xl font-extrabold leading-10 tracking-tight text-gray-100 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
+                        class="text-2xl font-extrabold leading-10 tracking-tight text-gray-100 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
                         HALL OF FAME
                     </h2>
-                    <p class="my-6 text-xl font-medium text-slate-400">Carve your name here</p>
+                    <p class="my-6 sm:text-lg lg:text-2xl font-medium text-slate-400">Carve your name here!</p>
                 </div>
             </div>
         </div>
@@ -289,9 +296,9 @@
             <div class="flex-col items-center ">
                 <div class="flex flex-col items-center justify-center w-full h-full max-w-2xl pr-8 mx-auto text-center">
                     <h2
-                        class="my-6 text-4xl font-extrabold leading-10 tracking-tight text-gray-100 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl uppercase">
+                        class="my-6 text-2xl font-extrabold leading-10 tracking-tight text-gray-100 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl uppercase">
                         Gallery</h2>
-                    <p class="my-6 text-xl font-medium text-slate-400">Create your signature tag with us!</p>
+                    <p class="my-6 sm:text-lg lg:text-2xl font-medium text-slate-400">Create your signature tag with us!</p>
 
                 </div>
             </div>
