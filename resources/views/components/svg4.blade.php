@@ -1,5 +1,5 @@
 <div class="relative w-full h-auto flex justify-center rounded-lg ">
-    <div class="absolute bottom-0 lg:h-48 h-28 lg:w-full w-auto">
+    <div class="absolute bottom-0 lg:h-48 h-28 lg:w-full w-full">
         <div class="flex flex-col items-start justify-center bg-black opacity-70 w-full h-full px-2 lg:px-20">
         
             <p class="text-white text-left opacity-100 text-xs lg:text-2xl font-bold">PWRTAG King of Bench Press</p>

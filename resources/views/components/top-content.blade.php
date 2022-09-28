@@ -41,7 +41,7 @@
                 </svg>
             </div>
             <div class="lg:flex w-full mt-1 lg:mt-5">
-                <div class="lg:hidden flex w-full rounded-lg">
+                <div class="lg:hidden flex w-full justify-center rounded-lg">
                 <iframe width="700" height="300" src="https://www.youtube.com/embed/UMCeWRc9gdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="hidden lg:flex w-full justify-center rounded-lg lg:mt-1">
