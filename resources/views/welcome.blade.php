@@ -11,6 +11,8 @@
     <meta property="og:image" content="{{ url('storage/Pwrtag_Neon.PNG') }}" />
     <title>{{ config('app.name') }}</title>
     <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <meta name="description" content="Place where you gain your muscle!">
+    <meta name=”robots” content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
